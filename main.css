@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #282847;
+    color: #282847;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.generator {
+    width: 100%;
+    max-width: 640px;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+input:not([type="checkbox"]),
+button {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.password {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid transparent;
+    background:linear-gradient(to right, white, white),linear-gradient(to right, red, blue);
+    background-clip: padding-box, border-box;
+    /* background-origin: padding-box, border-box; */
+}
+
+.password input {
+    flex: 1 1 0%;
+    padding: 0.5rem;
+    color: #282847;
+}
+
+.password input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+.password button {
+    cursor: pointer;
+    background: linear-gradient(to bottom, red 0%, blue 75%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div input[type="number"] {
+    text-align: right;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, red 25%, blue 50%);
+    background-size: 200%;
+    background-position: 25%;
+    transition: 0.3s ease-out;
+    border-radius: 0.25rem;
+}
+
+button[type="submit"]:hover {
+    background-position: 75%;
+}
+
+.generator div {
+    display: flex;
+    /* white-space: nowrap; */
+    user-select: none;
+    margin-bottom: 1rem;
+}
+
+.generator div span {
+    display: block;
+    flex :1 1 0%;
+    /* white-space: nowrap; */
+}

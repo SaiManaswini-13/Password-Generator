@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="generator">
+            <h1>Password Generator</h1>
+            <div class="password">
+                <input type="text" id="password" readonly placeholder="Generate a password">
+                <button class="material-icons" id="copy">content_copy</button>
+            </div>
+            <div>
+                <span>Password Length:</span>
+                <input type="number" id="length" value="16" checked>
+            </div>
+            <div>
+                <span>Include UpperCase Letters:</span>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div>
+                <span>Include LowerCase Letters:</span>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div>
+                <span>Include Numbers:</span>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div>
+                <span>Include Symbols:</span>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+            <button type="submit" id="generate">Genterate Password</button>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
